@@ -1,5 +1,5 @@
 # Bootcamp-Project-Files
-This repository displays an Azure cloud network and includes step by step instructions for setting up an automated Elk Stack deployment with Filebeat and Metricbeat. It also includes a set of Bash scripts that I have written for various practice scenarios. 
+This repository displays an Azure cloud network and includes step by step instructions for setting up an automated Elk Stack deployment with Filebeat and Metricbeat. There are pictures in the Images folder of the playbook files running correctly. These pictures include the command to execute an ansible playbook. It also includes a set of Bash scripts that I have written for various practice scenarios. 
 
 
 ## Automated ELK Stack Deployment
