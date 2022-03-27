@@ -81,24 +81,17 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 	
-	Filebeat collects log data for each virtual machine. Allows us to see info such as how many visitors we’ve had and 	   if theyve experience any errors. It also shows us what processes are running on our connected hosts:
+	Filebeat collects log data for each virtual machine. 
+	It allows us to see info such as how many visitors we’ve had and if theyve experience any errors.
+	It also shows us what processes are running on our connected hosts:
         For example: On Mar 21,2022 @ 19:11:56 a python3 process ran on Web-2.
-	Metricbeat provides metric logs for each VM and provides CPU and memory usage.
+	Metricbeat collects metrics of the system logs for each VM and outputs CPU and memory usage.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the Copy the mulitple config and playbook files in the etc/ansible and etc/ansible/roles directories. file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Copy the mulitple config and playbook files in the etc/ansible and etc/ansible/roles directories.
- Where do you copy it?_ to Jumpbox 
-- _Which file do you update to make Ansible run the playbook on a specific machine?
-Update the config/hosts files to include Kabana, and elastisearch, host IP and Port Number.
- How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ 
-- _Which URL do you navigate to in order to check that the ELK server is running?
-   http://20.25.109.88:5601/app/kabana
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- Copy the filebeat and metricbeat config and playbook files to the jumpbox.
+- Update the config files to include Kabana, elastisearch, the host IP and Port Numbers. 
+- Run the playbook, and navigate to the Elk server (http://20.25.109.88:5601/app/kabana) to check that the installation
+  worked as expected.
