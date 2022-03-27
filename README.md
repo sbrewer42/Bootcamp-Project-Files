@@ -8,7 +8,21 @@ The files in this repository were used to configure the network depicted below.
 
 ![Network Diagram](Diagram/AzureNetworkDiagram.PNG)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above:
+
+![Jumpbox](Ansible/Jumpbox.yml)
+
+![Elk](Ansible/install-elk.yml)
+
+![Filebeat-config](Ansible/filebeat-config.yml)
+
+![Filebeat-playbook](Ansible/filebeat-playbook.yml)
+
+![Metricbeat-config](Ansible/metricbeat-config.yml)
+
+![Metricbeat-playbook](Ansible/metric-playbook.yml)
+
+Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
 This document contains the following details:
 - Description of the Topology
